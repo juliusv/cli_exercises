@@ -22,7 +22,7 @@
 13. How many unique visitors (unique IP addresses) does the "access.log" file contain?
 14. Same as 13., but restrict this to only hits on March 8th
 15. Same as 14., but instead of counting them, write the visitors' IP addresses to a new file, named "access_mar_8.log"
-16. Print the first last 20 lines of "access.log" into a new file named "short.log"
+16. Print the first and last 20 lines of "access.log" into a new file named "short.log"
 
 ## Answers
 
