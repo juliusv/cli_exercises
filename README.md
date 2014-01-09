@@ -11,13 +11,13 @@
 2. How many lines in the "words" file contain the word "foo" anywhere on the line?
 3. Print the "words" file in reverse lexicographic order
 4. Print the lines of the "words" file which contain "foo" in reverse lexicographic order
-5. Same as 4., but exclude words containing semicolons
+5. Same as 4., but exclude words containing single quotes
 6. Same as 5., but replace all occurrences of "foo" with "fa"
 7. How many files underneath /etc end with ".conf"?
 8. Which lines are different between the "words" and "words2" dictionary files?
-9. How long has it been since your computer was booted?
+9. How long has it been since your computer was started?
 10. How many free bytes do you have left on your root (/) filesystem?
-11. How many bytes does the "cli_exercises" directory take?
+11. How many bytes does the "cli_exercises" directory take up?
 12. How large is the "words" file in bytes?
 13. How many unique visitors (unique IP addresses) does the "access.log" file contain?
 14. Same as 13., but restrict this to only hits on March 8th
@@ -45,7 +45,9 @@
 9. `uptime`
 10. `df -h /`
 11. `du`
-12. `ls -l words`
+12. `ls -l words | cut -d" " -f5`
+      or
+    `wc -c words`
 13. `cut -f1 -d" " access.log | sort -u | wc -l`
       or
     `awk '{ print $1 }' access.log | sort -u | wc -l`
