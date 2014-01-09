@@ -13,7 +13,7 @@
 4. Print the lines of the "words" file which contain "foo" in reverse lexicographic order
 5. Same as 4., but exclude words containing semicolons
 6. Same as 5., but replace all occurrences of "foo" with "fa"
-7. How many files in /etc end with ".conf"?
+7. How many files underneath /etc end with ".conf"?
 8. Which lines are different between the "words" and "words2" dictionary files?
 9. How long has it been since your computer was booted?
 10. How many free bytes do you have left on your root (/) filesystem?
