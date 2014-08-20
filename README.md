@@ -27,32 +27,46 @@
 ## Answers
 
 1. `wc -l words`
+
       or
+
    `wc -l <words`
+
       or
+
    `cat words | wc -l`
 2. `grep foo words | wc -l`
 3. `sort -r words`
 4. `grep foo words | sort -r`
 5. `grep foo words | grep -v "'" | sort -r`
+
       or
+
    `grep foo words | grep -v \' | sort -r`
 6. `grep foo words | grep -v "'" | sed 's/foo/fa/' | sort -r`
 7. `find /etc -name "*.conf" | wc -l`
 8. `diff -u words words2`
+
       or
+
    `diff -u words{,2}`
 9. `uptime`
 10. `df -h /`
 11. `du`
 12. `ls -l words | cut -d" " -f5`
+
       or
+
     `wc -c words`
 13. `cut -f1 -d" " access.log | sort -u | wc -l`
+
       or
+
     `awk '{ print $1 }' access.log | sort -u | wc -l`
 14. `grep '07/Mar/2004' access.log | cut -f1 -d" " | sort -u | wc -l`
 15. `grep '07/Mar/2004' access.log | cut -f1 -d" " | sort -u > access_mar_8.log`
 16. `head -n 20 access.log > short.log; tail -n 20 access.log >> short.log`
+
       or
+
     `(head -n 20 access.log && tail -n 20 access.log) > short.log`
