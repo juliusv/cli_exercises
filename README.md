@@ -50,7 +50,7 @@
       or
 
    `diff -u words{,2}`
-9. `uptime`
+9. `uptime -s`
 10. `df -h /`
 11. `du`
 12. `ls -l words | cut -d" " -f5`
